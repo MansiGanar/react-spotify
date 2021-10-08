@@ -1,0 +1,316 @@
+/* artist page css */
+body {
+  background-color: black;
+  color: white;
+}
+
+.table {
+  color: white;
+}
+
+.gradBg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 46%,
+    rgba(107, 107, 107, 1) 100%
+  );
+  margin: 0%;
+}
+
+.row {
+  margin: 0%;
+}
+
+#queen-cover {
+  min-width: 200px;
+  max-width: 100%;
+  height: 100%;
+}
+
+#arrow-left {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+#arrow-right {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0.4rem;
+  right: 1rem;
+}
+
+h4 {
+  color: white;
+}
+
+#profilePic {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+}
+
+#pause {
+  margin: 20px;
+}
+
+#follow {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  border: 0.5px solid;
+  width: 65px;
+  height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  border-color: grey;
+  position: relative;
+}
+
+#threeDots {
+  padding-left: 20px;
+  align-self: center;
+}
+
+.card {
+  width: 350px;
+  background-color: transparent;
+  border-color: transparent;
+  height: 35px;
+}
+
+.card-title {
+  font-size: 10px;
+  vertical-align: 50%;
+  margin: 0%;
+}
+
+.table td,
+.table th {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  vertical-align: 50%;
+}
+
+.songImg {
+  align-self: center;
+}
+
+#cardImg {
+  width: 35px;
+  height: 35px;
+  margin-left: 8px;
+}
+
+.seeMore {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.table {
+  height: 200px;
+}
+/* 
+  div.card:hover {
+  
+    background-color: rgba(128, 128, 128, 0.219);
+    
+    
+  } */
+
+/* side bar CSS */
+
+.line {
+  border-bottom: 0.5px solid grey;
+}
+
+#sideBar {
+  height: 20px;
+  margin-bottom: 0%;
+  color: grey;
+  font-weight: bold;
+}
+
+#sidebarBody {
+  padding: 0%;
+}
+
+a {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ul {
+  height: 400px;
+  width: 411px;
+  overflow: auto;
+  list-style-type: none;
+  font-size: 10px;
+  color: grey;
+  padding: 0%;
+  font-weight: 280;
+  position: relative;
+}
+
+li {
+  margin-top: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 107, 107, 1);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.col-lg-10 {
+  padding: 0%;
+}
+
+.col-2.d-none.d-lg-inline {
+  padding: 20px;
+  padding-right: 10px;
+}
+
+#people {
+  position: absolute;
+  right: 25px;
+}
+
+#createPlaylist {
+  background-color: rgb(156, 156, 156);
+  color: black;
+}
+
+#queen {
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  top: 60%;
+  left: 30px;
+}
+
+#verified {
+  position: absolute;
+  top: 53%;
+  left: 30px;
+}
+
+#queenListeners {
+  position: absolute;
+  left: 30px;
+  top: 90%;
+}
+
+.alignedCards {
+  align-items: baseline;
+  padding-left: 5px;
+}
+
+div.alignedCards:hover {
+  background-color: rgba(145, 144, 144, 0.274);
+  border-radius: 2px;
+}
+
+.music-player {
+  position: sticky;
+  bottom: 0%;
+  width: 99.5vw;
+  height: 12vh;
+  border-top: solid 1px gray;
+  background-color: black !important;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.p-music {
+  color: rgba(248, 248, 248, 0.459);
+}
+
+#slider {
+  -webkit-appearance: unset;
+  width: 80vw;
+  height: 4px;
+}
+#slider2 {
+  -webkit-appearance: unset;
+  height: 4px;
+}
+
+#footerButton {
+  transition: 0.2s ease;
+}
+
+#footerButton:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+}
+
+.fa-heart {
+  margin-bottom: 40px;
+  transform: scale(1.3);
+}
+.leftFooter {
+  position: relative;
+}
+.leftFooter #fullscreen {
+  position: absolute;
+  right: -15px;
+  bottom: 22px;
+}
+@media only screen and (min-width: 850px) {
+  #slider {
+    width: 50vw !important;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .rmusic {
+    display: none !important;
+  }
+  .lmusic {
+    display: none !important;
+  }
+}
