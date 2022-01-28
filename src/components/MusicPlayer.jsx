@@ -151,7 +151,7 @@ const MusicPlayer = () => {
           <input type="range" id="slider2" />
         </div>
       </div>
-      ;{/* end of music player html */}
+      {/* end of music player html */}
     </>
   );
 };

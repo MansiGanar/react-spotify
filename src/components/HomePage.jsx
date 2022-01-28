@@ -4,9 +4,7 @@ import { Card, Row, Col } from "react-bootstrap";
 
 class HomePage extends Component {
   state = {
-    music: {
-      music: [],
-    },
+    data: null,
   };
 
   fetchMusic = async () => {
@@ -15,9 +13,15 @@ class HomePage extends Component {
 
     try {
       const response = await fetch(url);
-      const data = await response.json();
       console.log("the fetch is done here");
-      console.log(data);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        this.setState({
+          data: data,
+        });
+      } else {
+      }
     } catch (error) {
       console.log(error);
       console.log("outside the try block");
@@ -25,7 +29,15 @@ class HomePage extends Component {
   };
   componentDidMount = async () => {
     this.fetchMusic();
-    // console.log("this.state.music.music");
+    console.log("from inside the component did mount");
+    // const getdata = async () => {
+    //   let mydat = await this.fetchMusic();
+    //   this.setState({
+    //     data: mydat,
+    //   });
+    //   console.log(this.state.data);
+    // };
+    // this.getdata();
   };
 
   render() {
@@ -33,7 +45,7 @@ class HomePage extends Component {
       <>
         <h3 className="col-11">Recently played</h3>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="" />
+          <Card.Img variant="top" src={booksimg} />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
@@ -42,18 +54,6 @@ class HomePage extends Component {
             </Card.Text>
           </Card.Body>
         </Card>
-        {this.fetchMusic.music.map((m) => (
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        ))}
       </>
     );
   }
